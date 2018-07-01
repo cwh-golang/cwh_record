@@ -134,15 +134,24 @@
 	git push
 	git diff  查看不同
 
+/*************************************go web********************************************/
+
 54、sqlite3 bootcss beego
 
 55、Request Response	
 
-go http
+56、看视频第二集：《初窥 Web 开发》32.31  （Unknown讲这个视频的时候是2013年8月6日）
+	在运行bee run 的时候报错，如下：
+	bee run myapp
+	No application 'myapp' found in your GOPATH 
 
+	分析：由于在运行bee new myapp时的路径不是在src下，所以在运行bee run myapp时，系统报找不myapp
 
+	解决办法：重新再src下运行bee new myapp，重新生成myapp文件，再次执行bee run myapp，就能正常运行了
 
-
+57、用Visual Studio Code来组织文件结构，用sublime text来进行代码编辑，
+    Visual Studio Code ：用来编译安装整个文件
+	sublime text：编辑代码时有提示，方便 ，二者结合起来用，可以充分发挥优势
 
 
 
