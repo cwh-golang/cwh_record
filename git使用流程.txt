@@ -1,0 +1,17 @@
+git clone 
+
+git status 查看状态
+
+git add .  把当前改动添加到缓存
+
+git commit -m “”
+
+git push
+
+git diff  查看不同
+
+cmder的使用
+vscode的使用
+git的使用
+go路径的管理
+
