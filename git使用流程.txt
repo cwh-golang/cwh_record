@@ -4,7 +4,7 @@ git status 查看状态
 
 git add .  把当前改动添加到缓存
 
-git commit -m “”
+git commit -m "Say something about this change!"
 
 git push
 
