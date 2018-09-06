@@ -1,0 +1,11 @@
+
+
+/************this doc is just for the experices easy to forget**************/
+
+1、go Google 安装器 可以一键安装Googlepaly上的应用
+
+2、华硕飞行堡垒FX80 15.6寸笔记本win10系统高分辨率显示屏字体模糊问题的解决办法：
+   使用工具：Windows10 DPI FIX
+   教程：http://dl.pconline.com.cn/download/400083.html 
+
+3、

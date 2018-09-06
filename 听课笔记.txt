@@ -159,7 +159,7 @@
 Windows命令行工具cmder配置(亲测能用)
 https://segmentfault.com/a/1190000011361877
 
-
+1、
 变量声明的方式：
 函数内的变量：
     var a int
@@ -173,7 +173,13 @@ https://segmentfault.com/a/1190000011361877
     var a int = 1
 	var a = 1
 
-fmt.Printf("%q",s) //可以将双引号打出来，用引号将字符串引起
+2、fmt.Printf("%q",s) //可以将双引号打出来，用引号将字符串引起
+
+3、go语言中声明常量需要用const关键字，而不是用var关键字
+
+4、
+
+
 
 
 
