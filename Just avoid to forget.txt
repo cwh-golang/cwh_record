@@ -1,4 +1,4 @@
-
+﻿
 
 /************this doc is just for the experices easy to forget**************/
 
@@ -8,4 +8,5 @@
    使用工具：Windows10 DPI FIX
    教程：http://dl.pconline.com.cn/download/400083.html 
 
-3、
+3、Windows命令行工具cmder配置(亲测能用)
+   https://segmentfault.com/a/1190000011361877
