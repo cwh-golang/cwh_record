@@ -130,7 +130,7 @@
 	git clone 
 	git status 查看状态
 	git add .  把当前改动添加到缓存
-	git commit -m “”
+	git commit -m ""
 	git push
 	git diff  查看不同
 
@@ -180,24 +180,118 @@
 
 /*************************************ccmouse********************************************/
 
-1、复数的库 cmplex
+
+
+1、
 
 2、go语言中，const量为常量，只是进行字符串替换，有点类似于c语言中的宏，
 在初始声明的时候，如果没有指定类型，则根据其在使用时根据实际情况
 推测；
 
 3、idea的使用技巧：ctrl+alt+l 对文档进行格式化
-                   Ctrl+Alt+V，可以引入变量。例如：new String(); 自动导入变量定义
+                   Ctrl+Alt+V，可以引入变量。例如：new String(); 自动导入变量定义，也可以修改变变量的名称，使之
+				                生成一个变量
+                   ctrl+D   复制上一行
+				   Ctrl+Shift+Alt+J 批量修改变量名
+				   alt+insert 插入set/get方法
+				   
 
+4、所使用过的包：
+   cmlpx io/ioutil os math reflect runtime bufio strconv fmt unicode/utf8
 
+5、所有数据定义的方法，都熟练使用一种；
+  var b bool
+  var s string
+  var i int
+  var b byte
+  var r rune
+  var f float32
+  var c complex64       
+  
+  var arr1 [5]int      arr2 := [...]int{1,2,3,4,5}  //---------------------自己喜欢使用的方法
 
+6、数组的遍历：
+   A、for i := 0; i < len(arr3); i++ {
+   B、for i := range arr3 {
+   C、for i,v:=range arr3{      //---------------------自己喜欢使用的方法
+   
+7、A、slice是对原本数组的一个veiw；
+   B、将数组取为slice的方法：arr[:]
+   C、Reslice : s = s[2:]
+   D、slice 的扩展：           //---------------------ccmouse课程中第一个比较难的问题
+   E、slice的指针、len cap
+   F、在对slice进行append的时候，随着append的数量越来越大，go语言会自动重新分配一段内存
+      来装在数据，不再是对从前的数组的一个view；
+   G、声明一个slice之后就可以用，不用先分配一定的空间（应该是通过append之类的功能来实现的），
+      直接往里面添加值，系统不会崩溃；
+   H、内建函数 make append len cap
+   I、slice的创建：s := make([]int,10,15)   //---------------------自己喜欢使用的方法
+   J、slice的copy的时候，以最小的数组的长度为zhun；
+   K、元素的删除，从头删除，从尾部删除
+   L、从头部删除元素，cap会自减，从尾部删除元素，cap不一定会自减；
+   
+8、A、map的建立方法：
+      m:=map[string]string{}
+      m:=make(map[string]int)
+   B、map的便利 for k,v := range m {}
+      获取map的元素：value,ok := m["hello"]，判断ok可以判断出元素是否存在
+   
+9、字符串也可以向slice操作：
+    s := "hello world"
+	s = s[2:3]
+	
+10、如果要处理国际化的语言，尽量将传进来的字符串先转换成rune类型，例如：
+    r := []rune(s) 
 
+11、结构的建立：tree:=new(node)
+    采用指针接受和采用值接受对方法的调用者是没有区别的，都可以；
 
+12、包名和目录名可以不一样，但是每个目录下面只能有一个包； //-----------我一直比较犯糊涂的地方
+    包名与路径名不一样
+    import的时候需要用路径名
+	实际在调用的时候需要引用包名
+	关于引用包的问题：如何引用github上的包？如何实际操作？
+	
+13、包的封装：定义别名和使用组合
 
+14、go SDK 1.11自动集成了goimports功能，如果引入的包没有使用，自动会被删除 //-----------这个功能好爽
+               如果暂时不使用某个包，可以咋包名前面加一个"_"，例如： _ "math"
 
+15、go get + url 可以从网站上拉下一下东西来 ，获取第三方库；
+    但是某些包可能无法拉下来，比如在Google服务器上的，可采用gopm去拿：
+	go get -v github.com/gpmgo/gopm
+	gopm get -g -v -u golang.org/x/tools/cmd/goimports
 
+16、go语言是面向接口的编程语言，与传统的面向对象的语言不同
 
+17、对interface的理解   //---------------------ccmouse课程中第二个比较难的问题
 
+18、
+	
+
+/*************************************待搞清楚的算法，也是课程中举的比较多的例子********************************/
+1、整形数字转二进制的算法；
+2、寻找最长不含有重复字符的字串
+    a b d a f g d s k m n
+	
+	bytes := []byte(s)
+	start := 0
+	lastOccurred := make(map[byte]int)
+	maxLen := 0
+	
+	for i , ch := range bytes{
+		lastI,ok := lastOccurred[ch]
+		if ok && lastI >= start{
+		
+		}
+		if
+		
+		lastOccurred[ch] = i
+	}
+	
+	
+递归：先找长度为 len，看里面是否有重复字符，
+                       找里面是否有重复字符的方法：
 
 
 

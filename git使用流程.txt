@@ -1,4 +1,4 @@
-git clone + https://github.com/cwh-golang/cwh_record.git(网站地址)
+git clone https://github.com/cwh-golang/cwh_record.git(网站地址)
 
 git status 查看状态
 
