@@ -197,7 +197,7 @@
 				   
 
 4、所使用过的包：
-   cmlpx io/ioutil os math reflect runtime bufio strconv fmt unicode/utf8
+   cmlpx io/ioutil os math reflect runtime bufio strconv fmt unicode/utf8 strings io
 
 5、所有数据定义的方法，都熟练使用一种；
   var b bool
@@ -266,8 +266,14 @@
 
 17、对interface的理解   //---------------------ccmouse课程中第二个比较难的问题
 
-18、
-	
+18、go语言中比较重要的接口：string reader writer
+
+19、在函数接口的演示程序中，fib.go里面，当p的空间太小之后，会导致空间不够，会出问题，但是
+    ccmouse的解决方案我没有听懂  //---------------------需要在下一次视频学习的时候，深入理解
+
+20、对函数闭包的理解  //---------------------ccmouse课程中第三个比较难的问题
+
+21、
 
 /*************************************待搞清楚的算法，也是课程中举的比较多的例子********************************/
 1、整形数字转二进制的算法；
