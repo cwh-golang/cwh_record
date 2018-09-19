@@ -1,0 +1,12 @@
+
+1、安装：MySQL 5.7.23
+问题：安装之后不能启动：
+      MySQL 服务无法启动。
+解决方案：	  
+  A、先删除mysql的安装，要清除干净；
+     //(这个步骤可以省略)先按照这个链接里面的步骤进行删除：https://blog.csdn.net/sxingming/article/details/52601250
+     查看MySQL：sc query mysql
+	 删除MySQL：sc delete mysql
+  
+  B、再重新安装，安装流程如下：
+     https://www.cnblogs.com/yyhh/p/5062153.html
