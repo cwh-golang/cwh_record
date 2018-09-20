@@ -10,3 +10,47 @@
   
   B、再重新安装，安装流程如下：
      https://www.cnblogs.com/yyhh/p/5062153.html
+
+2、MySQL查看有哪些数据库：show databases;
+
+3、在MySQL安装好之后，要将安装好之后的bin目录添加到环境变量里面去，这样在其他路径下，执行MySQL的命令就
+   不用进行路径切换，可以直接执行；
+
+4、MySQL的使用流程（cmd方式）：
+   A、启动MySQL ，开机默认是启动的，可以通过 sc query mysql 命令查看MySQL的状态；
+      如果是 RUNNING ,则表示为启动状态；如果是STOPPED ,则表示为未停止状态；
+	  则可以通过 net start mysql 命令来启动MySQL服务；
+	  需要停止MySQL服务，可以执行 net stop mysql 命令；
+	  值得注意的是，需要删除MySQL时，应该先停止MySQL服务；
+   B、登陆MySQL，启动MySQL服务后，需要登陆到MySQL中去，此时需要使用用户名和密码，命令如下：
+      mysql -u root -p //需要增加对参数的说明
+   C、查看所有的数据库目录，使用命令 show databases; 如果没有自己的数据库，可以新建一个
+      自己的数据库：create database mydatabase; 在查看所有的数据库，就可以看到新建的数据库了；
+   D、选择自己想要使用的数据库：use mydatabase; 就可以进入mydatabase数据库，进行新建表、增加
+      数据、数据查询等操作；
+   E、在操作完成之后，需要推出数据库，执行 exit; 	  
+   
+5、我的MySQL的 root用户的密码是root
+               cwhdb用户的密码是cwhqq_123
+
+6、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
