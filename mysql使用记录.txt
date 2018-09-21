@@ -25,17 +25,29 @@
    B、登陆MySQL，启动MySQL服务后，需要登陆到MySQL中去，此时需要使用用户名和密码，命令如下：
       mysql -u root -p //需要增加对参数的说明
    C、查看所有的数据库目录，使用命令 show databases; 如果没有自己的数据库，可以新建一个
-      自己的数据库：create database mydatabase; 在查看所有的数据库，就可以看到新建的数据库了；
+      自己的数据库：create database mydatabase; 再查看所有的数据库，就可以看到新建的数据库了；
    D、选择自己想要使用的数据库：use mydatabase; 就可以进入mydatabase数据库，进行新建表、增加
       数据、数据查询等操作；
+   E、To reference tables in the mydatabase,use the syntax : show tables;
+   F. To get the detail information of the table ,use syntax :desc tablename;
+   
    E、在操作完成之后，需要推出数据库，执行 exit; 	  
    
 5、我的MySQL的 root用户的密码是root
                cwhdb用户的密码是cwhqq_123
 
-6、
+6. How to  create a new user in mysql 5.7:
+   please reference the following website:
+   https://stackoverflow.com/questions/1720244/create-new-user-in-mysql-and-give-it-full-access-to-one-database
 
+7. Different user will see different database by use the syntax : show databases .
 
+8. log.Fatalln(err) will exit the program with code 1. So becareful with it.
+
+9. We can only create table in a database by golang ,do not try to create a database by program.
+   We can create a database by commdline.
+
+10.
 
 
 

@@ -287,6 +287,9 @@
 25、golang的时间包好像有点问题，下面这个例子运行出来的结果不正确：
   https://play.golang.org/p/HFD0bdh_4oI	
 	
+26. When use http.Get(url),the url should begin with "http://", not just as "www.baidu.com".
+
+27.
 /*************************************待搞清楚的算法，也是课程中举的比较多的例子********************************/
 1、整形数字转二进制的算法；
 2、寻找最长不含有重复字符的字串
