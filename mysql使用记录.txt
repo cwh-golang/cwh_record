@@ -46,22 +46,12 @@
 8. We can only create table in a database by golang ,do not try to create a database by program.
    We can create a database by commdline.
 
-9. 
+9.To install mysql in ubuntu ,please reference this url:
+   https://linuxize.com/post/how-to-install-mysql-on-ubuntu-18-04/ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+10. To answer the problem: 
+    ERROR 1698 (28000): Access denied for user 'root'@'localhost' in the 
+    ubuntu18.04 
+    please reference the website:
+    https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
 
