@@ -291,7 +291,11 @@
 
 27. log.Fatalln(err) will exit the program with code 1. So becareful with it.
 
-28. 
+28. use the flowing cmd to test:
+     go tool cover -html=c.out 
+     go tool pprof cpu.out
+     web(#to read the file 'svg' with firefox)
+     
 /*************************************待搞清楚的算法，也是课程中举的比较多的例子********************************/
 1、整形数字转二进制的算法；
 2、寻找最长不含有重复字符的字串

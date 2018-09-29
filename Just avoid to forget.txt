@@ -23,4 +23,6 @@
 
 5、安装wmwaretools: http://www.hsuton.com/ubuntu18-04-vmwaretools-install/
 
-6. 
+6. install bcloud in ubuntu,please reference the website:
+   https://github.com/XuShaohua/bcloud-packages
+   --------what a pity, it doesn't work. 
