@@ -1,0 +1,24 @@
+
+
+
+
+让树莓派自动上报IP地址到邮箱
+http://shumeipai.nxez.com/2014/03/18/let-raspberry-pi-ip-address-is-automatically-reported-to-the-mailbox.html
+
+
+发送邮箱时报错：Mutt 发信 GPGME: CMS protocol not available
+解决方案：https://xtu2.com/845.html
+
+发送邮箱时报错：Error sending message, child exited 127 (Exec error.).
+解决方案：https://blog.csdn.net/coobutter/article/details/8718552
+
+发送邮件时报错： msmtp: authentication failed (method PLAIN):
+解决方案:
+https://www.cnblogs.com/hjfeng1988/p/4464116.html
+
+发送邮箱时报错：网页回复301
+解决方案：将网页从www.126.com 换为 www.baidu.com
+
+(rc-->runcomand)rc.local 系统启动时执行的脚本文件
+在/etc/rc.local中添加启动文件时，要添加在exit 0 的前面，写字exit 0 后面，
+没有实际意义，不会被执行，因为已经退出了。
