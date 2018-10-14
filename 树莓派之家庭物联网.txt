@@ -22,3 +22,7 @@ https://www.cnblogs.com/hjfeng1988/p/4464116.html
 (rc-->runcomand)rc.local 系统启动时执行的脚本文件
 在/etc/rc.local中添加启动文件时，要添加在exit 0 的前面，写字exit 0 后面，
 没有实际意义，不会被执行，因为已经退出了。
+
+
+远程登陆(Telnet)树莓派和VNC远程桌面方法：
+https://blog.csdn.net/wait_for_taht_day5/article/details/51399755
