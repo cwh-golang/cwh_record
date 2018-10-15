@@ -1,0 +1,11 @@
+
+
+1、使用idea时，在安装好之后，新建第一个工程时，出现：“错误: 找不到或无法加载主类 com.Main”
+   解决方案：https://blog.csdn.net/gxx_csdn/article/details/79059884
+   没有理解其中的原因，只是按照这个提示操作，就不出现错误了。
+   
+2、一键格式化代碼： Ctrl+Alt+L
+   https://www.cnblogs.com/tonycody/p/3257601.html
+   http://wiki.jikexueyuan.com/project/intellij-idea-tutorial/keymap-introduce.html
+   
+3、
