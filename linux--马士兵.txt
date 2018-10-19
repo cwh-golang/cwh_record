@@ -35,4 +35,29 @@
 
 8、arm-linux-gcc hello.c 没有成功
 
-9、
+9、交叉编译的时候报错：arm-linux-gcc error while loading shared libraries: libz.so.1
+    解决方案：https://askubuntu.com/questions/659697/error-while-loading-shared-library-libz-so-1-while-cross-compiling-for-arm-linux
+
+10、Linux下如何查看分区文件系统类型
+    https://blog.csdn.net/lzjsqn/article/details/72059035	
+	
+11、vim /etc/fstab 在挂载设备完成之后，修改fstab的时候，里面不能写错字，否则会导致无法加载系统；
+    在用vim修改该文件的时候，关键字会有颜色提示，可以注意一下，不要写错关键字；
+
+12、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
