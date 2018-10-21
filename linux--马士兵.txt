@@ -46,12 +46,32 @@
 
 12、
 
+/********************韦东山嵌入式Linux******************************/
 
+1、嵌入式外设分类：
+   A、GPIO类：只有1根脚；
+   B、协议类：uart ，iic ，spi，LCD，nandflash，有多跟脚，但是没有地址线和数据线的划分；
+   C、RamLike类，由内存统一编址：SRAM、norFlash、DM9000，有多根脚，有地址线和数据线的划分；
 
+2、如何将u-boot下载到norflash中去？
 
+3、查看mini2440的用户手册的版本信息，看看更新了多少版，每版的差别
 
+4、win7下不能用DNW下载的替代方法
+   https://blog.csdn.net/zhang_danf/article/details/18010437
+   
+5、mini2440----keil for ARM下的调试与下载环境的搭建
+   https://blog.csdn.net/cangencong/article/details/7568839
+   
+6、mini2440开发板使用步骤：
+   1、先接串口线，USB线（用于下载内核、文件系统以及更新BootLoader），或者通过nfs挂在网络文件系统，
+      内核也可以通过网口烧写到里面去。
+   2、
+   
+7、在安卓手机上安装一个Linux操作系统应该是一件很好玩的事情，可以尝试一下，但是一时半会肯定搞不定。
 
-
+8、mini2440采用minitools工具烧写系统或裸机程序方法
+  https://blog.csdn.net/u014449366/article/details/52844476
 
 
 
