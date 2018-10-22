@@ -64,19 +64,58 @@
    https://blog.csdn.net/cangencong/article/details/7568839
    
 6、mini2440开发板使用步骤：
-   1、先接串口线，USB线（用于下载内核、文件系统以及更新BootLoader），或者通过nfs挂在网络文件系统，
+   A、线看原理图、使用手册，网上搜索教程、资料
+   B、先接串口线，USB线（用于下载内核、文件系统以及更新BootLoader），或者通过nfs挂在网络文件系统，
       内核也可以通过网口烧写到里面去。
-   2、
+   C、第三章 备份恢复系统及安装更新 -->3.2  安装 Linux （没有适合我的内核<内核文件为什么要区分LCD尺寸呢？>和文件，可能要自己制作）
+   D、安装Ubuntu虚拟机，搭建Linux环境；
+   E、
    
 7、在安卓手机上安装一个Linux操作系统应该是一件很好玩的事情，可以尝试一下，但是一时半会肯定搞不定。
 
 8、mini2440采用minitools工具烧写系统或裸机程序方法
   https://blog.csdn.net/u014449366/article/details/52844476
 
+9、mini2440支持jlink烧写nandflash
+  https://blog.csdn.net/u011308691/article/details/23686777
+  http://eric-gao.iteye.com/blog/2151040
+  https://www.amobbs.com/thread-3228953-1-1.html
+  
+  
+10、没搞明白的点，nor启动和nand启动
+    开始启动的时候，2440是如何到nor或者nand中去取数据的，  
+	
+11、终于明白J-Link Commander 和J-Flash ARM 的作用了，
+    J-Link Commander提供交互式的命令行模式进行程序烧写；功能比较丰富，可以烧写控制nandflash之类存储器；
+	而J-Flash ARM只能烧写RAMLIKE的存储器；比如单片机上的片内存储，ram，cpu外挂的SRAM；
+	
+12、mini2440的nor flash与nand flash启动过程区别
+   https://blog.csdn.net/YEYUANGEN/article/details/6707384
+   http://blog.sina.com.cn/s/blog_ba08e8e00101bje9.html
+   
+	
+13、内核启动过程分析(基于mini2440和linux v2.6.32.2)
+   http://unicornx.github.io/2015/12/27/20151227-lk-init/
+   
+   
+14、USB-DEVICE是通过2440虚拟出来的串口
 
-
-
-
+15、百问网的资料百度网盘：
+   http://www.100ask.org/a/download/tools/
+   淘宝店：
+   https://100ask.taobao.com/category-1216448524.htm?spm=a1z10.5-c-s.w4010-18944745102.20.5eb149c7fGWKMg&search=y&catName=C%2B%2B#bd
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
