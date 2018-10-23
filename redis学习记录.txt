@@ -1,0 +1,16 @@
+
+
+1、redis数据库安装
+  https://blog.csdn.net/qq_36431213/article/details/75138497
+  
+2、重启redis命令
+   http://www.joyupx.com/test1/95
+   
+3、访问远程Redis服务。Connect to Remote Redis Server
+  https://blog.csdn.net/kinginblue/article/details/51619445
+  
+4、redis 报错 Redis protected-mode 配置文件没有真正启动
+  https://blog.csdn.net/Agly_Clarlie/article/details/52251746  
+  
+5、Java 使用 Redis
+  http://www.redis.net.cn/tutorial/3525.html  
