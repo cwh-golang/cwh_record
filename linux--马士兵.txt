@@ -33,7 +33,7 @@
 
 7、硬盘挂载没有成功
 
-8、arm-linux-gcc hello.c 没有成功
+8、arm-linux-gcc hello.c 没有成功---配置好环境就好了
 
 9、交叉编译的时候报错：arm-linux-gcc error while loading shared libraries: libz.so.1
     解决方案：https://askubuntu.com/questions/659697/error-while-loading-shared-library-libz-so-1-while-cross-compiling-for-arm-linux
@@ -53,7 +53,7 @@
    B、协议类：uart ，iic ，spi，LCD，nandflash，有多跟脚，但是没有地址线和数据线的划分；
    C、RamLike类，由内存统一编址：SRAM、norFlash、DM9000，有多根脚，有地址线和数据线的划分；
 
-2、如何将u-boot下载到norflash中去？
+2、如何将u-boot下载到norflash中去？---直接用jlink烧写。
 
 3、查看mini2440的用户手册的版本信息，看看更新了多少版，每版的差别
 
@@ -104,15 +104,23 @@
    http://www.100ask.org/a/download/tools/
    淘宝店：
    https://100ask.taobao.com/category-1216448524.htm?spm=a1z10.5-c-s.w4010-18944745102.20.5eb149c7fGWKMg&search=y&catName=C%2B%2B#bd
+  
 	
 	
+16、Linux系列：Ubuntu虚拟机设置固定IP上网（配置IP、网关、DNS、防止resolv.conf被重写）
+    http://www.cnblogs.com/lanxuezaipiao/p/3613497.html
+	https://www.cnblogs.com/objectorl/archive/2012/09/27/vmware-ubuntu-nat-static-ip-settings.html
 	
+17、Makefile简易教程
+   https://www.jianshu.com/p/ff0e0e26c47a	
+   
+18、常用u-boot命令详解
+   https://blog.csdn.net/ghostyu/article/details/6968681   
 	
-	
-	
-	
-	
-	
+19、u-boot通过nfs从服务器下载内核，并且启动内核,挂载根文件系统的方法
+   https://blog.csdn.net/qq_27889877/article/details/76557666	
+   https://my.oschina.net/skdkjxy/blog/325515
+   https://blog.csdn.net/robot__man/article/details/48632465
 	
 	
 	
