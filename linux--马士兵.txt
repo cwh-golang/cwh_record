@@ -122,9 +122,15 @@
    https://my.oschina.net/skdkjxy/blog/325515
    https://blog.csdn.net/robot__man/article/details/48632465
 	
+20、QEMU模拟FriendlyArm的Mini2440开发板
+   http://blog.51cto.com/4526621/1044040	
 	
-	
+21、问题：直接按照视频里面的进行安装arm虚拟机，会出错，如下：
+     ./mini2440_start.sh: line 32: ./../arm-softmmu/qemu-system-arm: No such file or directory
 
-
+22、tftpd32如何使用？tftpd32使用方法
+   http://www.opdown.com/html/61517.html
+   
+23、   
 
 	
