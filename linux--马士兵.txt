@@ -136,6 +136,10 @@
 	
 24、ARM反汇编工具objdump 出来的文件与手写的汇编文件的内容不一样
 
+25、ubuntu下使用qemu安装虚拟机并配置桥接网络
+    https://blog.csdn.net/u010817321/article/details/52117344
+	
+26、
 
 
 
