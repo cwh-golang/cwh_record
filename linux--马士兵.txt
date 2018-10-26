@@ -131,6 +131,25 @@
 22、tftpd32如何使用？tftpd32使用方法
    http://www.opdown.com/html/61517.html
    
-23、   
+23、用Qemu模拟vexpress-a9 --- 配置 qemu 的网络功能   
+   https://www.cnblogs.com/pengdonglin137/p/5023340.html
+	
+24、ARM反汇编工具objdump 出来的文件与手写的汇编文件的内容不一样
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
