@@ -1,0 +1,298 @@
+
+1、连按5下ESC键，会出来所有的Linux命令；
+
+2、命令提示中[]里面的内容是可选的，可有可无；
+
+3、Linux下面的后缀名不一定是表示其文件类型；
+
+4、chkconfig
+
+5、ps -ef |grep tomcat
+
+6、如何使用Telnet连接远程服务器
+
+7、Linux 命令行 上网
+
+8、profile --> 档案、环境
+
+9、以.开头的文件，都是隐藏文件；
+
+
+/***************************嵌入式Linux应用与开发实践**********************/
+1、ps命令输出内容的详细意思？
+
+2、命令行的颜色
+
+3、nfs samba tftp ssh 这些服务的的功能有些是相同的
+
+4、为什么c语言一直排在编程语言排行榜的前面？
+
+5、韦东山 嵌入式Linux第一期视频
+
+6、arm虚拟机是什么？
+
+7、硬盘挂载没有成功
+
+8、arm-linux-gcc hello.c 没有成功---配置好环境就好了
+
+9、交叉编译的时候报错：arm-linux-gcc error while loading shared libraries: libz.so.1
+    解决方案：https://askubuntu.com/questions/659697/error-while-loading-shared-library-libz-so-1-while-cross-compiling-for-arm-linux
+
+10、Linux下如何查看分区文件系统类型
+    https://blog.csdn.net/lzjsqn/article/details/72059035	
+	
+11、vim /etc/fstab 在挂载设备完成之后，修改fstab的时候，里面不能写错字，否则会导致无法加载系统；
+    在用vim修改该文件的时候，关键字会有颜色提示，可以注意一下，不要写错关键字；
+
+12、
+
+/********************韦东山嵌入式Linux******************************/
+
+1、嵌入式外设分类：
+   A、GPIO类：只有1根脚；
+   B、协议类：uart ，iic ，spi，LCD，nandflash，有多跟脚，但是没有地址线和数据线的划分；
+   C、RamLike类，由内存统一编址：SRAM、norFlash、DM9000，有多根脚，有地址线和数据线的划分；
+
+2、如何将u-boot下载到norflash中去？---直接用jlink烧写。
+
+3、查看mini2440的用户手册的版本信息，看看更新了多少版，每版的差别
+
+4、win7下不能用DNW下载的替代方法
+   https://blog.csdn.net/zhang_danf/article/details/18010437
+   
+5、mini2440----keil for ARM下的调试与下载环境的搭建
+   https://blog.csdn.net/cangencong/article/details/7568839
+   
+6、mini2440开发板使用步骤：
+   A、线看原理图、使用手册，网上搜索教程、资料
+   B、先接串口线，USB线（用于下载内核、文件系统以及更新BootLoader），或者通过nfs挂在网络文件系统，
+      内核也可以通过网口烧写到里面去。
+   C、第三章 备份恢复系统及安装更新 -->3.2  安装 Linux （没有适合我的内核<内核文件为什么要区分LCD尺寸呢？>和文件，可能要自己制作）
+   D、安装Ubuntu虚拟机，搭建Linux环境；
+   E、
+   
+7、在安卓手机上安装一个Linux操作系统应该是一件很好玩的事情，可以尝试一下，但是一时半会肯定搞不定。
+
+8、mini2440采用minitools工具烧写系统或裸机程序方法
+  https://blog.csdn.net/u014449366/article/details/52844476
+
+9、mini2440支持jlink烧写nandflash
+  https://blog.csdn.net/u011308691/article/details/23686777
+  http://eric-gao.iteye.com/blog/2151040
+  https://www.amobbs.com/thread-3228953-1-1.html
+  
+  
+10、没搞明白的点，nor启动和nand启动
+    开始启动的时候，2440是如何到nor或者nand中去取数据的，  
+	
+11、终于明白J-Link Commander 和J-Flash ARM 的作用了，
+    J-Link Commander提供交互式的命令行模式进行程序烧写；功能比较丰富，可以烧写控制nandflash之类存储器；
+	而J-Flash ARM只能烧写RAMLIKE的存储器；比如单片机上的片内存储，ram，cpu外挂的SRAM；
+	
+12、mini2440的nor flash与nand flash启动过程区别
+   https://blog.csdn.net/YEYUANGEN/article/details/6707384
+   http://blog.sina.com.cn/s/blog_ba08e8e00101bje9.html
+   
+	
+13、内核启动过程分析(基于mini2440和linux v2.6.32.2)
+   http://unicornx.github.io/2015/12/27/20151227-lk-init/
+   
+   
+14、USB-DEVICE是通过2440虚拟出来的串口
+
+15、百问网的资料百度网盘：
+   http://www.100ask.org/a/download/tools/
+   淘宝店：
+   https://100ask.taobao.com/category-1216448524.htm?spm=a1z10.5-c-s.w4010-18944745102.20.5eb149c7fGWKMg&search=y&catName=C%2B%2B#bd
+  
+	
+	
+16、Linux系列：Ubuntu虚拟机设置固定IP上网（配置IP、网关、DNS、防止resolv.conf被重写）
+    http://www.cnblogs.com/lanxuezaipiao/p/3613497.html
+	https://www.cnblogs.com/objectorl/archive/2012/09/27/vmware-ubuntu-nat-static-ip-settings.html
+	
+17、Makefile简易教程
+   https://www.jianshu.com/p/ff0e0e26c47a	
+   
+18、常用u-boot命令详解
+   https://blog.csdn.net/ghostyu/article/details/6968681   
+	
+19、u-boot通过nfs从服务器下载内核，并且启动内核,挂载根文件系统的方法
+   https://blog.csdn.net/qq_27889877/article/details/76557666	
+   https://my.oschina.net/skdkjxy/blog/325515
+   https://blog.csdn.net/robot__man/article/details/48632465
+   烧写内核+烧写文件系统（JZ2440-S3C2440）：https://blog.csdn.net/liyuqian199695/article/details/53575982
+	
+20、QEMU模拟FriendlyArm的Mini2440开发板
+   http://blog.51cto.com/4526621/1044040	
+	
+21、问题：直接按照视频里面的进行安装arm虚拟机，会出错，如下：
+     ./mini2440_start.sh: line 32: ./../arm-softmmu/qemu-system-arm: No such file or directory
+
+22、tftpd32如何使用？tftpd32使用方法
+   http://www.opdown.com/html/61517.html
+   https://blog.csdn.net/tuwenqi2013/article/details/54986056
+   https://blog.csdn.net/JAZZSOLDIER/article/details/78729713
+   
+23、用Qemu模拟vexpress-a9 --- 配置 qemu 的网络功能   
+   https://www.cnblogs.com/pengdonglin137/p/5023340.html
+	
+24、ARM反汇编工具objdump 出来的文件与手写的汇编文件的内容不一样
+
+25、ubuntu下使用qemu安装虚拟机并配置桥接网络
+    https://blog.csdn.net/u010817321/article/details/52117344
+	
+26、启动根文件系统时提示WARNING: Unable to open an initial console的解决办法：
+   https://blog.csdn.net/yanbixing123/article/details/52300901
+
+27、一波三折的arm虚拟机的安装：
+    首先为什么要用arm虚拟机呢？答案是方便，作为我这种家里有孩子的，或者不太喜欢接太多线的Linux初学者来说，
+	arm虚拟机能帮我解决很多问题，首先就行不怕被小孩来给你捣乱，其次是不用接一堆电源线、串口线、网线。
+	这些线真的很麻烦，占空间。闲话少说。。。
+	
+	1、我开始是在自建的Ubuntu上，想自己安装，但是后来失败了，至于失败的原因，暂时还没有找到，后续继续找，估计是路径的问题；
+	
+	2、在慕课网上找《嵌入式Linux应用与开发实践》平老师的课件的附件，里面有他制作好的Xubuntu的虚拟机和arm虚拟机的镜像文件；
+	arm虚拟机：https://www.icourse163.org/learn/JSIT-1001754045?from=study#/learn/content?type=detail&id=1004419142&cid=1005511384
+	Xubuntu以及VMware：https://www.icourse163.org/learn/JSIT-1001754045?from=study#/learn/announce
+	
+	3、安装好平老师提供的VMware和Xubuntu，登陆进去；
+	
+	4、进入/opt/mini2440/mini2440，里面有以下文件：
+	  ifdown.sh  mini2440_nand128.bin  qemu-ifdown  qemu-local-img-mount.sh  uImage
+      ifup.sh    mini2440_start.sh     qemu-ifup    u-boot.bin
+	  其中mini2440_start.sh是arm虚拟机的启动文件（需要仔细分析一下这些文件），ifup.sh是虚拟网卡启动文件。
+	  
+	5、这里需要注意了，平老师给的Xubuntu里面没有安装虚拟网卡 ，需要我们自行安装，安装方法如下：  
+	  ubuntu下使用qemu安装虚拟机并配置桥接网络：https://blog.csdn.net/u010817321/article/details/52117344
+	  参考：二、配置桥接网络
+      其实就是去修改/etc/network/interface文件，
+	  然后在关闭网卡：sudo service networking stop
+	  再重启网卡：    sudo service networking start
+	  然后在查看虚拟网卡是否启动： ifconfig
+	  
+	6、但此时的虚拟网卡的ip地址不是10.0.0.1（平老师给的启动设置命令里面的nfsroot=10.0.0.1，当然你也可以改为别的），
+	  回到/opt/mini2440/mini2440，执行./ifup.sh br0 命令；其中，br0是虚拟网卡的名子，
+	  现在再用ifconfig来看虚拟网卡的ip，地址就被改为10.0.0.1了。我们来看看./ifup.sh里面到底
+	  执行了些什么内容？
+      #!/bin/sh
+      ifconfig $1 10.0.0.1
+	  其实就是将传入的参数的网卡名称的ip地址改为 10.0.0.1
+	  !!!尴尬!!!
+	
+	7、然后再执行脚本./mini2440_start.sh，就可以启动arm虚拟机了；
+	   arm虚拟机启动的过程与真机启动的过程差不多，
+	   首先执行boot loader，再设置参数：
+	   set bootargs noinitrd root=/dev/nfs rw nfsroot=10.0.0.1:/opt/root_qtopia ip=10.0.0.10:10.0.0.1::255.255.255.0 console=ttySAC0,115200 mini2440=1tb
+	   再执行bootm，就可以启动arm虚拟机了；
+	   
+	8、arm虚拟机启动之后，就可以通过telnet进行登陆和控制了。
+	
+	9、至此，arm虚拟机基本上就启动完成也就可以用了。
+	  
+29、需要加强tftp/samba/nfs的安装和操作。
+
+30、TFTP服务器搭建与测试
+   https://blog.csdn.net/tuwenqi2013/article/details/54986056
+
+31、教你如何开启/关闭ubuntu防火墙
+   https://www.cnblogs.com/kluan/p/5993767.html
+
+32、nfs服务安装与配置/samba服务安装与配置/tftp服务配置
+    https://www.icourse163.org/learn/JSIT-1001754045?tid=1003097012#/learn/announce
+    Samba共享文件夹Windows中拷贝文件拒绝访问：https://blog.csdn.net/taoshengzhao369/article/details/80978217
+	终于搞定了samba的文件夹访问权限设置 http://uranuslei.is-programmer.com/posts/7734.html
+	
+33、J-LINK the connected emulator is a j-link clone问题
+    http://blog.sina.com.cn/s/blog_8a30d1990102vo66.html	
+	
+34、JLink重刷固件（win7/win8/win10亲测可用）
+	https://blog.csdn.net/lyj19960106/article/details/77944845?locationNum=10&fps=1
+	固定使用J-Flash 4.90版本，不要按软件去更新，
+    固件，否会被检测出来J-LINK the connected emulator is a j-link clone。
+	
+35、D:\D1\ubuntu\资料\images\uboot.bin可用。
+    D:\D1\ubuntu\micro2440\资料\images\Superboot2440.bin可用。
+	
+36、Minitool安装出现的问题	
+	https://blog.csdn.net/u013709322/article/details/72853792
+	
+37、SecureCRT & SecureFx 绿色破解版
+   https://blog.csdn.net/suzi1203/article/details/78821999
+	
+38、secureCRT中无法删除字符的问题
+   https://blog.csdn.net/cloudeagle_bupt/article/details/50000285	
+	
+39、TQ2440	虚拟机 开发板 PC 三者互相ping通
+  	https://blog.csdn.net/niepangu/article/details/50364799
+	
+40、每次上电只能手动配置一下虚拟机的ip，因为虚拟机处于桥接模式，
+    但是桥接的网卡（主机上的本地连接与开发板直连，显示为未识别网络）不能连接上，
+	如果与路由器直连，可能没有就没有这个问题了。
+	sudo ifconfig ens33 down
+	sudo ifconfig ens33 192.168.1.15
+	sudo ifconfig ens33 up
+	
+[home]
+   comment = Users profiles
+   path = /home/test     ;共享目录路径
+   guest ok = yes        ;运行匿名用户访问
+   browseable = yes      ;目录可以浏览
+   writable = yes        ;目录可写
+
+
+tftpboot 30008000 192.168.1.10:u-boot.bin
+tftpboot 30008000 192.168.1.10:Superboot2440.bin
+tftpboot 30008000 192.168.1.10:supervivi-128M.bin  --supervivi会直接启动Linux内核；
+
+nand erase 0 0x40000
+
+nand write 0x30008000 0 0x40000
+
+
+
+tftp 192.168.1.10:zImage_A70
+tftpboot 0x30008000 192.168.1.10:zImage_A70
+ 
+nand erase 0x100000 300000
+
+nand write 0x30008000 0x100000 300000
+
+nboot 30008000 0 0x100000
+
+bootm 30008000
+
+//烧写内核
+tftp 30000000 uImage_3.5
+nand erase kernel
+nand write.jffs2 30000000 kernel
+//烧写文件系统
+tftp 30000000 fs_qtopia.yaffs2
+nand erase root
+nand write.yaffs 30000000 0x00260000 $(filesize)
+nand write.jffs2 30000000 0x00260000 $(filesize)
+
+
+规定：
+1、笔记本主机IP：192.168.1.10
+2、Ubuntu虚拟机IP：192.168.1.15（与开发板和本地主机桥接的IP）， 上网用的ip192.168.24.129
+3、开发板的IP：192.168.1.12
+4、树莓派的IP：192.168.1.11
+
+使用一个xshell统一天下，不用什么secureCRT/超级终端/putty/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
