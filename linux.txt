@@ -241,7 +241,7 @@
    writable = yes        ;目录可写
 
 
-tftpboot 30008000 192.168.1.10:u-boot.bin
+tftpboot 30008000 u-boot.bin
 tftpboot 30008000 192.168.1.10:Superboot2440.bin
 tftpboot 30008000 192.168.1.10:supervivi-128M.bin  --supervivi会直接启动Linux内核；
 
@@ -278,6 +278,9 @@ nand write.jffs2 30000000 0x00260000 $(filesize)
 2、Ubuntu虚拟机IP：192.168.1.15（与开发板和本地主机桥接的IP）， 上网用的ip192.168.24.129
 3、开发板的IP：192.168.1.12
 4、树莓派的IP：192.168.1.11
+
+
+
 
 使用一个xshell统一天下，不用什么secureCRT/超级终端/putty/
 
