@@ -232,6 +232,9 @@
 	sudo ifconfig ens33 down
 	sudo ifconfig ens33 192.168.1.15
 	sudo ifconfig ens33 up
+
+41、编译Busybox时，出现错误fatal error: curses.h: No such file or directory
+    https://www.cnblogs.com/sodu88/p/linux-error-cursesh-no-such-file-directory.html    
 	
 [home]
    comment = Users profiles
