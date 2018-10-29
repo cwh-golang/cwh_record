@@ -235,7 +235,12 @@
 
 41、编译Busybox时，出现错误fatal error: curses.h: No such file or directory
     https://www.cnblogs.com/sodu88/p/linux-error-cursesh-no-such-file-directory.html    
-	
+
+42、在Ubuntu 64位环境下编译Liunx内核出现 Can't use 'defined(@array)' 错误的解决办法
+   https://blog.csdn.net/thinkerleo1997/article/details/52412042	
+   
+43、
+   
 [home]
    comment = Users profiles
    path = /home/test     ;共享目录路径
@@ -266,7 +271,7 @@ nboot 30008000 0 0x100000
 bootm 30008000
 
 //烧写内核
-tftp 30000000 uImage_3.5
+tftp 30000000 uImage_3.5      tftp 0x30007fc0 zImage
 nand erase kernel
 nand write.jffs2 30000000 kernel
 //烧写文件系统
