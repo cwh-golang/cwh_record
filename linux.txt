@@ -239,7 +239,8 @@
 42、在Ubuntu 64位环境下编译Liunx内核出现 Can't use 'defined(@array)' 错误的解决办法
    https://blog.csdn.net/thinkerleo1997/article/details/52412042	
    
-43、
+43、MobaXterm中文乱码编码问题，无需修改系统编码，GB2312
+    https://blog.csdn.net/qq_25646883/article/details/80854217
    
 [home]
    comment = Users profiles
@@ -288,13 +289,11 @@ nand write.jffs2 30000000 0x00260000 $(filesize)
 4、树莓派的IP：192.168.1.11
 
 
-
-
 使用一个xshell统一天下，不用什么secureCRT/超级终端/putty/
+不适用xshell啦，使用 MobaXterm吧，它把FileZilla、xshell、超级终端的功能集成到一块了，哈哈哈，真方便。
+尴尬了，MobaXterm不支持中文输入。
 
-
-
-
+回去试一下 使用友善之臂提供的源码编译 uImage，看能不能成功下载
 
 
 
