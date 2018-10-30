@@ -242,6 +242,10 @@
 43、MobaXterm中文乱码编码问题，无需修改系统编码，GB2312
     https://blog.csdn.net/qq_25646883/article/details/80854217
    
+44、设置uboot环境变量，需要用单引号将环境变量引起来：
+    set bootcmd 'nand read.i 0x33000000 60000 500000;bootm'
+   
+   
 [home]
    comment = Users profiles
    path = /home/test     ;共享目录路径
@@ -249,7 +253,7 @@
    browseable = yes      ;目录可以浏览
    writable = yes        ;目录可写
 
-
+//烧写u-boot
 tftpboot 30008000 u-boot.bin
 tftpboot 30008000 192.168.1.10:Superboot2440.bin
 tftpboot 30008000 192.168.1.10:supervivi-128M.bin  --supervivi会直接启动Linux内核；
@@ -296,12 +300,15 @@ nand write.jffs2 30000000 0x00260000 $(filesize)
 回去试一下 使用友善之臂提供的源码编译 uImage，看能不能成功下载
 
 
+bootargs=noinitrd root=/dev/mtdblock3 console=ttySAC0 init=/linuxrc
+bootcmd=nand read.i 0x30008000 60000 500000;bootm
 
 
+bootcmd=nand read.i 0x33000000 60000 500000;bootm
 
+set bootcmd 'nand read.i 0x33000000 60000 500000;bootm'
 
-
-
+setenv bootcmd tftpboot 33000000 uImage/; bootm 33000000
 
 
 
