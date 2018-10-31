@@ -15,3 +15,15 @@ vscode的使用
 git的使用
 go路径的管理
 
+goland 使用git 拉代码的时候，需要输入用户名和密码，并且会记住用户名和密码，
+需要修改用户名和密码的时候，请参考：
+https://segmentfault.com/q/1010000005952879/a-1020000005953004
+
+
+git checkout 按两下tab键，就出来分支，
+再git checkout 分支就把分支搞出来了
+
+
+代码中的以github.com开头的包只需要在goland的命令行里面执行go get XXX 就可以将
+github.com/grpc-ecosystem/go-grpc-middleware
+
