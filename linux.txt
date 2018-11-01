@@ -310,6 +310,24 @@ set bootcmd 'nand read.i 0x33000000 60000 500000;bootm'
 
 setenv bootcmd tftpboot 33000000 uImage/; bootm 33000000
 
+/usr/sbin/telnetd
 
+
+1、挂接nfs文件系统
+2、如何通过网口打印作为控制台
+3、2440如何实现telnet登陆？
+
+/**********************树莓派******************************************/
+1、树莓派网络配置eth0 wlan0静态IP
+   https://blog.csdn.net/mayi_xiaochaun/article/details/78634588
+   
+2、JZ2440 telnet
+  https://blog.csdn.net/insisxz/article/details/82974475?utm_source=blogxgwz7
+
+3、使用telnet登陆mini2440开发板
+   http://www.bubuko.com/infodetail-2479801.html
+
+4、linux下用ifconfig命令设置IP、掩码、网关   
+   https://blog.csdn.net/wangtingyao1990/article/details/60775309
 
 	
