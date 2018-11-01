@@ -323,9 +323,16 @@
 
 
 
+/*************************************使用记录********************************/
+1、flag包的使用方式：
+   var configPath = flag.String("configPath", "./conf/settings.yaml", "please input configPath") //定义
+   flag.Parse() //解析
+   fmt.Println(flag.Lookup("configPath").Value) //使用
+   参考：https://www.jianshu.com/p/f9cf46a4de0e
 
-
-
+2、yaml文件的解析
+   参考：https://www.jianshu.com/p/ac5ebd69a5f4
+   
 
 
 
