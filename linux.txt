@@ -244,7 +244,9 @@
    
 44、设置uboot环境变量，需要用单引号将环境变量引起来：
     set bootcmd 'nand read.i 0x33000000 60000 500000;bootm'
-   
+
+45、ubuntu下 mini2440的NFS挂载
+   https://blog.csdn.net/glorin/article/details/6285183	
    
 [home]
    comment = Users profiles
