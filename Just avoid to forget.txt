@@ -26,3 +26,7 @@
 6. install bcloud in ubuntu,please reference the website:
    https://github.com/XuShaohua/bcloud-packages
    --------what a pity, it doesn't work. 
+
+7、网线直连线与交叉线之间的区别   
+   https://blog.csdn.net/kingshown_WZ/article/details/46501673
+   
