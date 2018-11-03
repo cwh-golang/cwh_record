@@ -246,7 +246,31 @@
     set bootcmd 'nand read.i 0x33000000 60000 500000;bootm'
 
 45、ubuntu下 mini2440的NFS挂载
-   https://blog.csdn.net/glorin/article/details/6285183	
+    https://zhuanlan.zhihu.com/p/28556875  JZ2440V3开发板使用手册_兼容V2V1_使用前必读.pdf 7.4节
+	mount -t nfs -o nolock 192.168.1.15:/home/test /mnt/nfs_mnt  ----执行成功-----(其中192.168.1.15:/home/test 是server上的目录，/mnt/nfs_mnt是2440上的目录)
+	umount -v /mnt/nfs_mnt ----执行成功-----
+	树莓派上启动nfs server
+	https://www.cnblogs.com/zhangjiankun/p/4986827.html
+	
+	以下均是失败的尝试：（失败的错误点在于总是在Ubuntu下执行命令，尴尬）
+   -- https://blog.csdn.net/glorin/article/details/6285183	
+   -- mount -t nfs -o nolock 192.168.1.12:/mnt/nfs_mnt /home/test
+   -- mount -t nfs 127.0.0.1:/home/test /mnt/nfs
+   -- mount -t 192.168.1.12:/mnt/nfs_mnt /mnt/nfs
+   -- mount -t -o nolock 192.168.1.12:/mnt/nfs_mnt /home/test
+   -- umount -t nfs 127.0.0.1:/home/test
+   
+   -- 192.168.1.15:/home/test      mnt               nfs                defaults    0    0
+
+   -- mount -t nfs localhost:/home/test /mnt/nfs_mnt/
+   
+   -- mount -t nfs -o nolock, vers=2 192.168.1.15:/home/test /mnt/nfs_mnt
+   
+   
+   
+   
+
+
    
 [home]
    comment = Users profiles
