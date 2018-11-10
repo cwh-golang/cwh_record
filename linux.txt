@@ -266,9 +266,14 @@
    
    -- mount -t nfs -o nolock, vers=2 192.168.1.15:/home/test /mnt/nfs_mnt
    
+46、在mini2440开发板上出现-sh./hello not found错误的解决
+    https://blog.csdn.net/linux_time/article/details/37504423
+	需要重新更换编译器，请参考《JZ2440V3开发板使用手册_兼容V2V1_使用前必读.pdf》 7.1节
+
+47、树莓派 - 点亮LED
+   https://www.jianshu.com/p/e441a55797dc?utm_campaign=maleskine&utm_content=note&utm_medium=pc_all_hots&utm_source=recommendation	
    
-   
-   
+48、远程ssh登陆树莓派失败，报   
 
 
    
@@ -339,9 +344,9 @@ setenv bootcmd tftpboot 33000000 uImage/; bootm 33000000
 /usr/sbin/telnetd
 
 
-1、挂接nfs文件系统
-2、如何通过网口打印作为控制台
-3、2440如何实现telnet登陆？
+1、挂接nfs文件系统 ---已经解决---，
+2、如何通过网口打印作为控制台：难道很大，需要写串口程序和网卡程序，然后再写串口转网口的程序。（可用高级语言，python写，降低难度）
+3、2440如何实现telnet登陆？ --- 已经解决---
 
 /**********************树莓派******************************************/
 1、树莓派网络配置eth0 wlan0静态IP
