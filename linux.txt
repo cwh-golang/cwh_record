@@ -275,8 +275,30 @@
    
 48、远程ssh登陆树莓派失败，报   
 
-
+49、中断处理框架
+	A、request_irq(irq,handler,flags,name,dev_id);
+	   分配一个irqaction结构 --> 把irqaction结构放到irq_desc[irq] action链表中
+	   --> 设置引脚 --> 使能中断 
+	B、free_irq(irq,dev_id)
+       出链表 --> 禁止中断 
+	C、先写驱动程序，再写测试程序。
+	   
+50、如何在开发板上卸载或加载驱动？--> 那一系列的操作
+    lsmod :显示所有驱动程序
+	rmmod led_drv :安装led_dev驱动
+	insmod led_drv :卸载led_dev驱动
+	cat /proc/interrupts :查看所有中断
+	
+51、解决 ubuntu -bash: cannot create temp file for here-document: No space left on device
+   https://blog.csdn.net/u014239709/article/details/79966060
    
+52、树莓派在重装系统的时候，一定要按照下面的指示做，至少做到4.2节：
+	http://bbs.yahboom.com/thread-1774-1-1.html   
+  
+53、
+
+
+  
 [home]
    comment = Users profiles
    path = /home/test     ;共享目录路径
