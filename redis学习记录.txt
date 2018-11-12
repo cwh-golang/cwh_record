@@ -5,6 +5,7 @@
   
 2、重启redis命令
    http://www.joyupx.com/test1/95
+   https://blog.csdn.net/blick__winkel/article/details/77986481
    
 3、访问远程Redis服务。Connect to Remote Redis Server
   https://blog.csdn.net/kinginblue/article/details/51619445
@@ -14,3 +15,6 @@
   
 5、Java 使用 Redis
   http://www.redis.net.cn/tutorial/3525.html  
+  
+6、
+ 

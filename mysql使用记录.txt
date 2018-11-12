@@ -55,3 +55,49 @@
     please reference the website:
     https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost
 
+11、删除表信息的方式有两种 :
+	truncate table table_name;
+	delete * from table_name;
+	
+12、MySQL、mongodb、redis的区别：
+    MySQL是关系型数据库，需要先建表，再访问
+	mongodb和redis类似，是非关系型的数据库，
+	mongodb可以直接通过json进行读写，
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*********************************草稿******************************************/
+	1、插入（增）
+	
+	INSERT INTO device_conn_info(device_cid,access_id,authkey,pid,uuid,configkey,state,fail_reason,broker_id,region,ip_address,create_time,end_time) values("hah","hah","hah","hah","hah","hah","hah","hah","hah","hah","hah",'2016-05-06','2016-05-06');
+	INSERT INTO device_conn_info(device_cid,access_id,authkey,pid,uuid,configkey,state,fail_reason,broker_id,region,ip_address,create_time,end_time) values("","hah","hah","hah","hah","hah","hah","hah","hah","hah","hah",'2016-05-06','2016-05-06');
+    INSERT INTO device_conn_info(device_cid,access_id,authkey,pid,uuid,configkey,state,fail_reason,broker_id,region,ip_address,create_time) values("","hah","hah","hah","hah","hah","hah","hah","hah","hah","hah",'2016-05-06');
+	INSERT INTO device_conn_info(access_id,authkey,pid,uuid,configkey,state,fail_reason,broker_id,region,ip_address) values("hah","hah","hah","hah","hah","hah","hah","hah","hah","hah");
+	
+	2、删除（删）
+	DELETE FROM device_conn_info WHERE conn_info_id=1;
+	
+	3、更新（改）
+	UPDATE device_conn_info SET authkey='dfadf',configkey='ewendsfa' WHERE conn_info_id=1;  --成功--
+	
+	
+	4、查找（查）
+	select * from device_conn_info;
+    select * from device_conn_info where conn_info_id = 1;
+    select * from device_conn_info where access_id = 'hah';
+	   
+	
+	
+	
+	
+	
+	
+	
+	
+	

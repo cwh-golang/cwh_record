@@ -1,0 +1,10 @@
+
+
+1、Windows 10 下安装 MongoDB 3.6
+   https://blog.csdn.net/lin521lh/article/details/79759643
+   http://www.runoob.com/mongodb/mongodb-window-install.html
+   
+2、mongodb菜鸟教程
+  http://www.runoob.com/mongodb/mongodb-tutorial.html
+  
+3、

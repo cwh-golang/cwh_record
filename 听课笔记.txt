@@ -133,6 +133,9 @@
 	git commit -m ""
 	git push
 	git diff  查看不同
+	
+54、调试go语言出现：exec: "gcc": executable file not found in %PATH% 
+    --整个问题我一直未解决。
 
 /*************************************go web********************************************/
 
@@ -323,7 +326,7 @@
 
 
 
-/*************************************使用记录********************************/
+/*************************************项目开发记录********************************/
 1、flag包的使用方式：
    var configPath = flag.String("configPath", "./conf/settings.yaml", "please input configPath") //定义
    flag.Parse() //解析
@@ -333,11 +336,39 @@
 2、yaml文件的解析
    参考：https://www.jianshu.com/p/ac5ebd69a5f4
    
+3、记录整个devicemanagem的二次开发过程：
+   A、
+   B、mysql查询测试的时候被卡住了，
+   C、MySQL进行数据查询时，如果查询的字段有值为null，则不能直接用string去接受查询的结果，需要用[]byte先去接受，
+      再将[]byte转换为字符串：
+	  	dsn := fmt.Sprintf("SELECT device_cid FROM %s WHERE %s",tablename,condition,)
+		row := DbMysl.QueryRow(dsn)
+		uuidmsql:=UuidMySQL{}
+		var deviceCid  []byte
+		err := row.Scan(&deviceCid)
+		check(err)
+		uuidmsql.DeviceCid = string(deviceCid)
+		if uuidmsql.DeviceCid == "" {
+			fmt.Println("null")
+		}
+	D、postman的使用，如何再chrome上安装postman，postman如何发送数据；
+	E、日志打印打印开关没有开
+	F、MySQL没有初始化
+	G、redis没有启动：
+	   如果redis没有通过命令行启动的话，还能不能访问成功？--实践证明，可以操作成功；
+	   redis到底是如何操作的？--
+	
+4、应该边写代码，边写测试文件，不要等到把整个代码都写完了，再来写测试文件，这个会比较被动；
 
-
-
-
-
+5、goland的注册过程：
+   https://zhile.io/2018/08/17/jetbrains-license-server-crack.html	
+   A、先按照jetbrains-agent-v2018.2.2 readme里面的步骤进行注册，发现到第四步
+      测试不通过，报无法进行url测试（原话记不住了，大致是这个意思）
+   B、于是就采用ACTIVATION_CODE.txt 内的注册码激活直接粘贴注册；好像就可以了！ 
+	安装完成后，进行界面设置：
+	https://blog.csdn.net/qq_31339365/article/details/78323153   
+	  
+12、beego的beego.NSRouter参数的书写方式：
 
 
 
