@@ -7,4 +7,6 @@
 2、mongodb菜鸟教程
   http://www.runoob.com/mongodb/mongodb-tutorial.html
   
-3、
+3、mongoDB基本方法详情
+  https://blog.csdn.net/suicaijiao/article/details/76608529
+  https://blog.csdn.net/mjzhang1993/article/details/79876827
