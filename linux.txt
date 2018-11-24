@@ -247,10 +247,16 @@
 
 45、ubuntu下 mini2440的NFS挂载
     https://zhuanlan.zhihu.com/p/28556875  JZ2440V3开发板使用手册_兼容V2V1_使用前必读.pdf 7.4节
-	mount -t nfs -o nolock 192.168.1.15:/home/test /mnt/nfs_mnt  ----执行成功-----(其中192.168.1.15:/home/test 是server上的目录，/mnt/nfs_mnt是2440上的目录)
+	   将2440上的/mnt/nfs_mnt目录挂载到 xubuntu上的192.168.1.15:/home/test上
+	   mount -t nfs -o nolock 192.168.1.15:/home/test /mnt/nfs_mnt  ----执行成功-----(其中192.168.1.15:/home/test 是server上的目录，/mnt/nfs_mnt是2440上的目录)
+	   将2440上的/mnt/nfs_mnt目录挂载到 xubuntu上的192.168.1.11:/home/pi/nfs_server上
+	   mount -t nfs -o nolock 192.168.1.11:/home/pi/nfs_server /mnt/nfs_mnt
 	umount -v /mnt/nfs_mnt ----执行成功-----
 	树莓派上启动nfs server
 	https://www.cnblogs.com/zhangjiankun/p/4986827.html
+	树莓派下挂载nfs
+	
+	
 	
 	以下均是失败的尝试：（失败的错误点在于总是在Ubuntu下执行命令，尴尬）
    -- https://blog.csdn.net/glorin/article/details/6285183	
