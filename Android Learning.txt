@@ -1,0 +1,18 @@
+
+
+1、android studio 3.0 添加依赖出现 Unable to resolve dependency for：xxx的报错
+  https://blog.csdn.net/qq_28282853/article/details/79599070
+  
+2、android studio的教学视频：
+  https://study.163.com/course/courseMain.htm?courseId=1005646017
+  28元课程资料   江洲老师Android入门到精通课程资料链接:
+链接：https://pan.baidu.com/s/1TRS9dQNmTLpQZ5iWRamyPQ 密码：fxrn
+
+9.8元课程资料:Android studio入门到精通资料:
+链接：https://pan.baidu.com/s/15quOszHPKLKJKjw1G9dwKA 密码：6atk
+  
+
+3、安装完成Androidstudio之后，运行第一个Android程序，会需要很长时间，
+   ide需要去下载很多依赖，而且有些以来还在国外，不一定能下下来，可能
+   需要反复的新建几个项目，才能将所有的依赖下载下来，整个过程比较漫长，
+   需要耐心的等待。   

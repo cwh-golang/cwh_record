@@ -13,3 +13,14 @@
    
 4、https://blog.csdn.net/fesdgasdgasdg/article/details/73556109
    intellij idea 导出可执行jar
+   
+5、io读写
+   节点流：
+     -- FileInputStream：字节流 
+     -- FileReader:字符流
+   处理流：	 
+     -- BufferInputReader：处理流
+	 -- InputStreamReader:转换流
+	 -- DataInpuStream：数据流
+	 -- :打印流
+     
